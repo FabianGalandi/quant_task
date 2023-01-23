@@ -1,0 +1,12 @@
+# app
+streamlit
+
+# data science
+numpy
+pandas
+scikit-learn
+statsmodels
+
+# visualization
+seaborn
+matplotlib
