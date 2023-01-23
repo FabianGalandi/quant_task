@@ -42,7 +42,7 @@ with c4:
   )
 
 ### ---
-st.write(">Asset and liabilities values over the course of 3 years:")
+st.write(">Assets and liabilities values over the course of 3 years:")
 fixed_worst_case = [a, b, c, d]
 timeseries = do_three_years(total, fixed_worst_case)
 
