@@ -110,7 +110,7 @@ c5, c6 = st.columns(2)
 with c5:
   # st.write("**Mean** (change sliders below)")
   mean_stocks = st.slider('mean_stocks_decline',0.0, 1.0, 0.5)
-  mean_bonds = st.slider('mean_stocks_decline',0.0, 1.0, 0.3)
+  mean_bonds = st.slider('mean_bonds_decline',0.0, 1.0, 0.3)
   mean_flat1 = st.slider('mean_flat_potsdam_decline',0.0, 1.0, 0.1)
   mean_flat2 = st.slider('mean_flat_berlin_decline',0.0, 1.0, 0.1)
   mean = [mean_stocks, mean_bonds, mean_flat1, mean_flat2]
