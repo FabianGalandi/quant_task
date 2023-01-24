@@ -6,9 +6,9 @@ from helper import do_three_years
 
 plt.rcParams["font.family"] = "serif"
 
-total = 1000000
+st.write(f'#### Task Solution')
 
-st.write(f'#### Task Solution (assuming a total portfolio value of {total} EUR)')
+total = st.number_input('total asset value in EUR', min_value=0, value=1000000 , step=100000)
 
 """
 ```python
@@ -87,7 +87,7 @@ st.table(df_final_fixed.style.highlight_between(color="red",left=-9999999, right
 # Multiple Worst Case Scenarios
 """
 
-n_samples = st.slider('Number of Scenarios', 1 , 2000, 1000)
+n_samples = st.number_input('Number of Scenarios', min_value=1 , value=1000, step=1000)
 
 """
 ```python
