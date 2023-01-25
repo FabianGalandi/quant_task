@@ -76,7 +76,7 @@ with plt.style.context('tableau-colorblind10'):
 st.pyplot(fig)
 
 """
-The follwing **Daframe** was used to generate the barchart above (If you see some :red[**red**] entries below, you will not be able to service your payments)
+The follwing **Daframe** was used to generate the barchart above (If you see some :red[**red**] entries below, you will not be able to service your payments and commitments)
 """
 
 st.table(df_final_fixed.style.highlight_between(color="red",left=-9999999, right=0))
@@ -174,7 +174,7 @@ final_df['color'] = final_df.apply(lambda x: cmap[0] if x['is_positive'] else cm
 count = final_df['is_positive'].sum()/n_samples * 100
 count = np.around(count, 2)
 st.write("---")
-st.write("## In", count, "% of cases you will be able service your payments or donations.")
+st.write("## In", count, "% of cases you will be able service your payments and commitments.")
 st.write("---")
 
 
@@ -182,7 +182,7 @@ st.write("---")
 fig4, ax4 = plt.subplots()
 final_df.plot.scatter(x = 'mean_decline_stock_bonds', y = 'mean_decline_flats', c='color',figsize=[5,5], ax=ax4, grid=True)
 ax4.set_axisbelow(True) #to make gridlines behind plot
-ax4.set_title('Will you be able to service your payments and donations? \nEach dot represents one scenario (Blue=Yes, Orange=No)')
+ax4.set_title('Will you be able to service your payments and commitments? \nEach dot represents one scenario (Blue=Yes, Orange=No)')
 st.pyplot(fig4)
 
 
