@@ -10,3 +10,6 @@ statsmodels
 # visualization
 seaborn
 matplotlib
+
+# other
+openpyxl

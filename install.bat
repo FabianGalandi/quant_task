@@ -1,0 +1,1 @@
+python -m venv env2 && .\env2\Scripts\activate.bat && pip install -r requirements.txt
